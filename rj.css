@@ -105,9 +105,9 @@ img{
     display: none;
 }
 
-@media screen and (Max-width: 400px) {
+@media screen and (Max-width: 350px) {
     .container{
-        width: 90%;
+        width: 95%;
     }
     .imgcon{
         width: 85%;
