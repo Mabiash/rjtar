@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(27, 26, 26);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 60%;
+    height: 80%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container::before{
+    content: "";
+    width: 50%;
+    height: 200%;
+    background-image: linear-gradient(violet, aqua);
+    position: absolute;
+    z-index: -1;
+    animation: ani 2s  linear infinite;
+}
+
+@keyframes ani {
+    100%{
+        transform: rotate(180deg);
+    }
+}
+.con{
+    height: 99%;
+    width: 99%;
+    background-color: black;
+}
+
+.insidecon{
+    width: 80%;
+   
+}
+
+.top{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bot{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input, button{
+    padding: 7px 10px;
+    margin: 0px 10px;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 183, 255, 0.5);
+}
+
+input{
+    width: 60%;
+}
+
+button{
+    background-color: aqua;
+    color: black;
+    font-weight: 700;
+}
+
+.imgcon{
+    width: 70%;
+    height: 80%;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    border: 0;
+    display: none;
+}
+
+@media screen and (Max-width: 400px) {
+    .container{
+        width: 90%;
+    }
+    .imgcon{
+        width: 85%;
+    }
+}
+
+h1{
+    color: white;
+    position: absolute;
+    top: 3%;
+}
