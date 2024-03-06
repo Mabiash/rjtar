@@ -107,10 +107,11 @@ img{
 
 @media screen and (Max-width: 350px) {
     .container{
-        width: 95%;
+        width: 100%;
     }
     .imgcon{
-        width: 85%;
+        width: 100%;
+        height: 50%;
     }
 }
 
