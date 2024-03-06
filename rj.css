@@ -15,8 +15,8 @@ body{
 }
 
 .container{
-    width: 60%;
-    height: 80%;
+    width: 90%;
+    height: 70%;
     background-color: black;
     display: flex;
     flex-direction: column;
